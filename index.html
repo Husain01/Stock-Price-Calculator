@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Stock Price Calculator</title>
+</head>
+<body>
+    <div class="mainCard">
+        <div class="firstHalf half">
+            <form class="form" name="form">
+                <div>
+                <label>
+                    <input type="number" placeholder="Enter Cost Price of Stock" class="input" required>Purchase Price
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="number" placeholder="Enter Quantity of Stock" required class="input">Stock Quantity
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="number" placeholder="Enter Current Price of Stock" class="input" required>Current Price
+                </label>
+            </div>
+                <button type="submit" class="btn btn-primary">Check</button>
+            </form>
+            <div class="output"></div>
+        </div>
+        <div class="secondHalf half">
+            <a href="https://husainbhagat.netlify.app/" target="_blank" class="btn btn-secondary">Connect with Me</a>
+            <div>
+            <h1>Check Your Stock's</h1>
+            <h2>Profit <span><i class="fas fa-arrow-up"></i></span></h2>
+            <p>or</p>
+            <h2>Loss <span><i class="fas fa-arrow-down"></i></span></h2>
+        </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

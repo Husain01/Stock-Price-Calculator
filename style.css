@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root{
+    --primary-color:#00F260;
+    --secondary-color:#0575E6;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #00F260;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: .7px;
+}
+
+.mainCard{
+    display: flex;
+    background-color: whitesmoke;
+    height: 80%;
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.firstHalf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    flex-direction: column;
+}
+
+.secondHalf{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    width: 40%;
+    height: 100%;
+    background-color: #20CA98;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    position: relative;
+}
+
+.noBG{
+    background-color:transparent;
+}
+
+.white{
+    color:whitesmoke;
+}
+
+.sadBG{
+    background-image: url('./giphy.gif');
+    background-size: 100% 100%;
+}
+
+.happyBG{
+    background-image: url("./giphy\ \(1\).gif");
+    background-size: 100% 100%;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: whitesmoke;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+p{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.fa-arrow-up{
+    transform: rotate(45deg);
+    color:var(--primary-color);
+}
+.fa-arrow-down{
+    transform: rotate(45deg);
+    color:rgb(241, 18, 18);
+}
+
+.form{
+    width: 60%;
+}
+
+
+.input{
+    width: 70%;
+    font-size: 1.5rem;
+    border: none;
+    margin-bottom:1rem ;
+    background-color: transparent;
+    outline: none;
+}
+
+input:focus{
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+input::placeholder{
+    font-size: 1.5rem;
+}
+
+label{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.btn{
+    padding: 0.5rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 1.2rem;
+    background-color: transparent;
+}
+
+.btn-primary{
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-primary:hover{
+    border: 2px solid #20CA98;
+    background-color: #20CA98;
+    color: whitesmoke;
+}
+
+.btn-secondary{
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.btn-secondary:hover{
+    border: 2px solid black;
+    background-color: black;
+}
