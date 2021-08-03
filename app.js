@@ -41,7 +41,11 @@ function checkHandler(e){
             else{
                 const profit = ((SP-CP)*Qty).toFixed(2);
                 const profitPerc = (((SP-CP)*100)/CP).toFixed(2);
-                output.innerHTML = `<div style = "background-color:#0575E6e5; margin: 1rem; 
+                output.innerHTML = `<div 
+                style = "background-color:#0575E6e5;
+                 color:whitesmoke; 
+                 border-radius:5px;
+                 margin: 1rem; 
                 padding:1rem"> You gained ${profitPerc}%. Your Total profit is Rs. ${profit}</div>`;
 
                 if(profitPerc>50){
